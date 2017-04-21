@@ -9,7 +9,6 @@ import { SpecialpageComponent } from './specialpage/specialpage.component';
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
     component: HomeComponent
   },
   {
@@ -32,7 +31,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: []
 })
